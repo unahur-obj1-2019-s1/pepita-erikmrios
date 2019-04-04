@@ -1,4 +1,4 @@
-
+ 
 object alpiste {
 	method energiaPorGramo() { return 4 }
 }
@@ -9,21 +9,36 @@ object mondongo {
 
 // comida que esta fallada
 object bigMac {
-	method energiaQueOtorga() { return 2 }
+	method energiaPorGramo() { return 2 }
 }
 
 /*
  * el alcaucil da 20 joules por gramo
  */ 
 object alcaucil {
-	// completar
+	method energiaPorGramo() { return 20 }// completar
 }
+
 
 /*
  * el sorgo da 9 joules por gramo
  */ 
 object sorgo {
-	// completar
+	method energiaPorGramo() { return 9 }// completar
+}	
+object mijo {
+	var estaMojado=false
+	method energiaPorGramo(){
+		if (not estaMojado){
+			return 20
+			
+		} else {
+			return 15
+		}
+	}
 }
+	
 
-// despues, agregar mijo y canelones
+
+
+// despues, agregar mijo y canelo
